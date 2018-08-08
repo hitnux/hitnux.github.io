@@ -81,3 +81,18 @@ body {
 		left: 50%;
 	}
 }
+
+@media only screen and (max-width: 992px) {
+    .logo {
+        max-width: none;
+    }
+	.contact li{
+		left: 0;
+	}
+	.Content{
+		left: 50%;
+	}
+    .contact ul{
+        left: 15%;
+    }
+}
