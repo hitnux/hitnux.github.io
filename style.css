@@ -50,6 +50,7 @@ body {
 .social img{
 	width: 60px;
 	height: 60px;
+	opacity: 1;
 }
 .contact ul{
 	margin: 0px;
@@ -76,18 +77,6 @@ body {
   background-color: #008CBA;
 }
 
-.linkedin:hover .overlay {
-  opacity: 1;
-}
-.facebook:hover .overlay {
-  opacity: 1;
-}
-.twitter:hover .overlay {
-  opacity: 1;
-}
-.instagram:hover .overlay {
-  opacity: 1;
-}
 
 .text {
   color: white;
