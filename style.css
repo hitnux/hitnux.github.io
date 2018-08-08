@@ -6,14 +6,12 @@ html {
     color: white;
     line-height: 1.26;
 }
-
 body {
     overflow: hidden;
     max-width: 100vh;
     max-height: 100vh;
     text-align: center;
 }
-
 .Content {
     position: absolute;
     left: 40%;
@@ -31,7 +29,6 @@ body {
     -webkit-animation: fadeIn 3s .3s both;
     animation: fadeIn 3s .3s both;
 }
-
 .contact {
     opacity: 0;
     -webkit-transform: scale(.8);
@@ -41,7 +38,6 @@ body {
     -webkit-animation: fadeIn 3s 1s both;
     animation: fadeIn 3s 1s both;
 }
-
 .social{
 	position: relative;
     width: 100%;
@@ -59,34 +55,8 @@ body {
 .contact li{
 	float: left;
 	left: 37%;
-    width: 150px;
-    
+    width: 150px; 
 }
-
-.overlay {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 10%;
-  right: 0;
-  height: 100%;
-  width: 80%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
 @-webkit-keyframes fadeIn {
     to {
         opacity: 1;
@@ -94,7 +64,6 @@ body {
         transform: scale(1);
     }
 }
-
 @keyframes fadeIn {
     to {
         opacity: 1;
