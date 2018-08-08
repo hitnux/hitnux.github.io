@@ -44,8 +44,8 @@ body {
     display: block;
 }
 .social img{
-	width: 60px;
-	height: 60px;
+	max-width: 50px;
+	max-height: 50px;
 }
 .contact ul{
 	margin: 0px;
@@ -54,7 +54,6 @@ body {
 }
 .contact li{
 	float: left;
-	left: 37%;
     width: 150px; 
 }
 @-webkit-keyframes fadeIn {
