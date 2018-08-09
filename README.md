@@ -1,1 +1,1 @@
-Basit kişisel site <br> Önizleme: <a href="https://hlilbilgin.github.io">hlilbilgin.github.io</a>
+Önizleme: <a href="https://hlilbilgin.github.io">hlilbilgin.github.io</a>
