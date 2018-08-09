@@ -15,7 +15,7 @@ body {
 h1{
     color: #363636;
     opacity: 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .container {
     position: absolute;
@@ -32,9 +32,14 @@ h1{
     -webkit-animation: fadeIn 3s .3s both;
     transition: fadeIn 3s .3s both;
 }
+.logo img{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 150px;
+}
 .card{
     border-radius: 10px;
-    max-height: 330px;
+    max-height: 370px;
 }
 .about{
      opacity: 0;
