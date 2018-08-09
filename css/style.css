@@ -33,13 +33,13 @@ h1{
     transition: fadeIn 2s .2s both;
 }
 .logo img{
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 15px;
     height: 130px;
 }
 .card{
     border-radius: 5px;
-    max-height: 335px;
+    max-height: 390px;
 }
 .about{
      opacity: 0;
