@@ -40,7 +40,7 @@ h1{
 }
 .card{
     border-radius: 5px;
-    max-height: 420px;
+    max-height: 450px;
 }
 .about{
      opacity: 0;
@@ -48,8 +48,8 @@ h1{
     animation: fadeIn 2s .2s both;
 }
 .info{
-     opacity: 0;
     font-size: 11px;
+    opacity: 0;
     -webkit-animation: fadeIn 2s .2s both;
     animation: fadeIn 2s .2s both;
 }
@@ -71,9 +71,10 @@ h1{
 }
 .jumbotron li{
 	float: left;
-    width: 150px; 
+    width: 90px; 
 }
 .jumbotron a{
+    margin-bottom: 65px;
     margin-top: 7px;
     color: #363636;
     font-size: 3rem;
@@ -98,7 +99,6 @@ footer{
         transform: scale(1);
     }
 }
-
 @media only screen {
     .logo {
         max-width: none;
