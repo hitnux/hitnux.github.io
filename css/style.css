@@ -73,15 +73,3 @@ body {
 		left: 50%;
 	}
 }
-
-@media only screen and (max-width: 992px) {
-    .logo {
-        max-width: none;
-    }
-	.container{
-		left: 50%;
-	}
-    .jumbotron{
-        
-    }
-}
