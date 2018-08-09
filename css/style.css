@@ -48,6 +48,7 @@ h1{
     animation: fadeIn 2s .2s both;
 }
 .info{
+     opacity: 0;
     font-size: 11px;
     -webkit-animation: fadeIn 2s .2s both;
     animation: fadeIn 2s .2s both;
