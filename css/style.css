@@ -20,7 +20,7 @@ h1{
 }
 .container {
     position: absolute;
-    top: 50%;
+    top: 47%;
     max-width: 350px;
     opacity: 1;
     -webkit-transform: translate(-50%, -50%);
