@@ -20,10 +20,6 @@ body {
     transform: translate(-50%, -50%);
     max-width: 650px;
 }
-.jumbotron {
-    background: none
-}
-
 .logo {
     display: inline-block;
     max-width: 50px;
@@ -42,20 +38,20 @@ body {
     animation: fadeIn 3s 1s both;
 }
 .jumbotron{
-	position: relative;
+    background: none;
+	position:relative;
+    
     width: 100%;
-    display: block;
+    display: flex;
+	margin: 0px;
+    padding: 0px;
+    list-style-type: none;
 }
 .jumbotron img{
 	max-width: 50px;
 	max-height: 50px;
 }
-.contact ul{
-	margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
-.contact li{
+.jumbotron li{
 	float: left;
     width: 150px; 
 }
@@ -77,9 +73,6 @@ body {
     .logo {
         max-width: none;
     }
-	.contact li{
-		left: 0;
-	}
 	.container{
 		left: 50%;
 	}
@@ -89,13 +82,10 @@ body {
     .logo {
         max-width: none;
     }
-	.contact li{
-		left: 0;
-	}
 	.container{
 		left: 50%;
 	}
-    .contact ul{
-        left: 15%;
+    .jumbotron{
+        
     }
 }
