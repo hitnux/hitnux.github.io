@@ -14,7 +14,6 @@ body {
 }
 .container {
     position: absolute;
-    left: 40%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -24,7 +23,7 @@ body {
     display: inline-block;
     max-width: 50px;
     opacity: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     -webkit-animation: fadeIn 3s .3s both;
     animation: fadeIn 3s .3s both;
 }
@@ -39,9 +38,6 @@ body {
 }
 .jumbotron{
     background: none;
-	position:relative;
-    
-    width: 100%;
     display: flex;
 	margin: 0px;
     padding: 0px;
