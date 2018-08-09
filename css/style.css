@@ -63,6 +63,11 @@ h1{
 	float: left;
     width: 150px; 
 }
+footer{
+    font-size: 9px;
+    opacity: 0.7;
+    color: white;
+}
 @-webkit-keyframes fadeIn {
     to {
         opacity: 1;
