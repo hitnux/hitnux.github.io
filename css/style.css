@@ -19,7 +19,6 @@ h1{
 .container {
     position: absolute;
     top: 50%;
-    border-radius: 10px;
     max-width: 400px;
     opacity: 1;
     -webkit-transform: translate(-50%, -50%);
@@ -32,11 +31,13 @@ h1{
     -webkit-animation: fadeIn 3s .3s both;
     transition: fadeIn 3s .3s both;
 }
+.card{
+    border-radius: 10px;
+}
 .about{
      opacity: 0;
     -webkit-animation: fadeIn 3s .3s both;
     animation: fadeIn 3s .3s both;
-    margin-bottom: 20px;
 }
 .contact {
     opacity: 0;
