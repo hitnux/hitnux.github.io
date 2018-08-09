@@ -15,7 +15,7 @@ body {
 h1{
     color: #363636;
     opacity: 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .container {
     position: absolute;
@@ -39,7 +39,7 @@ h1{
 }
 .card{
     border-radius: 10px;
-    max-height: 370px;
+    max-height: 335px;
 }
 .about{
      opacity: 0;
@@ -67,7 +67,7 @@ h1{
     width: 150px; 
 }
 .jumbotron a{
-    margin-top: 20px;
+    margin-top: 7px;
     color: #363636;
     font-size: 3rem;
     opacity: 1;
