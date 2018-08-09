@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #363636;
+    color: white;
+    line-height: 1.26;
+}
+body {
+    overflow: hidden;
+    max-width: 100vh;
+    max-height: 100vh;
+    text-align: center;
+}
+.container {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 650px;
+}
+.jumbotron {
+    background: none
+}
+
+.logo {
+    display: inline-block;
+    max-width: 50px;
+    opacity: 0;
+    margin-bottom: 30px;
+    -webkit-animation: fadeIn 3s .3s both;
+    animation: fadeIn 3s .3s both;
+}
+.contact {
+    opacity: 0;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    font-size: 2.4em;
+    font-weight: normal;
+    -webkit-animation: fadeIn 3s 1s both;
+    animation: fadeIn 3s 1s both;
+}
+.jumbotron{
+	position: relative;
+    width: 100%;
+    display: block;
+}
+.jumbotron img{
+	max-width: 50px;
+	max-height: 50px;
+}
+.contact ul{
+	margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.contact li{
+	float: left;
+    width: 150px; 
+}
+@-webkit-keyframes fadeIn {
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .logo {
+        max-width: none;
+    }
+	.contact li{
+		left: 0;
+	}
+	.container{
+		left: 50%;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+    .logo {
+        max-width: none;
+    }
+	.contact li{
+		left: 0;
+	}
+	.container{
+		left: 50%;
+	}
+    .contact ul{
+        left: 15%;
+    }
+}
