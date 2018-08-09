@@ -29,8 +29,8 @@ h1{
     display: inline-block;
     max-width: 50px;
     opacity: 0;
-    -webkit-animation: fadeIn 3s .3s both;
-    transition: fadeIn 3s .3s both;
+    -webkit-animation: fadeIn 2s .2s both;
+    transition: fadeIn 2s .2s both;
 }
 .logo img{
     margin-top: 20px;
@@ -43,8 +43,8 @@ h1{
 }
 .about{
      opacity: 0;
-    -webkit-animation: fadeIn 3s .3s both;
-    animation: fadeIn 3s .3s both;
+    -webkit-animation: fadeIn 2s .2s both;
+    animation: fadeIn 2s .2s both;
 }
 .contact {
     opacity: 0;
