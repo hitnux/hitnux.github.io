@@ -25,14 +25,14 @@ h1{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.logo {
+.avatar {
     display: inline-block;
     max-width: 50px;
     opacity: 0;
     -webkit-animation: fadeIn 3s .3s both;
     transition: fadeIn 3s .3s both;
 }
-.logo img{
+.avatar img{
     margin-top: 20px;
     margin-bottom: 15px;
     height: 130px;
