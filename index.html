@@ -1,49 +1,244 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">        
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- FontAwasome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" integrity="sha384-DmABxgPhJN5jlTwituIyzIUk6oqyzf3+XuP7q3VfcWA2unxgim7OSSZKKf0KSsnh" crossorigin="anonymous">
-    <title>Halil Bilgin - HalilBilgin.com</title>
-	<link rel="shortcut icon" type="image/png" href="src/icon.png" />
-    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <meta name="google-site-verification" content="hxVrkNCI3UE0Scm9kenfmOLrQG5V684lOFTo0U8xlw4" />
+    <meta name="yandex-verification" content="ddc86819ded2d3e1" />
+    <meta name="description" content="Web ve mobil programlama alanlarıyla ilgileniyorum. Php, Python, JavaScript ve Java başlıca kullandığım  diller arasında yer alıyor. Bunların dışında yapay zeka ve sistem yönetimi alanlarına meraklıyım.">
+    <link rel="stylesheet" href="" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+      <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(53522116, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/53522116" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+    <link rel="shortcut icon" type="image/png" href="src/icon.png" />
+    <title>Halil Bilgin - Software Engineering Student</title>
+    <style>
+        html{
+            overflow:hidden;
+        }
+        h2{
+            color: #17365D;
+        }
+        .btn{
+            background: #17365D;
+        }
+        .btn:hover{
+            background: #17365D;
+            opacity: 0.5;
+        }
+        body {
+          background: #000;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#000;
+          margin: 0;
+          padding: 0;
+        }
+        .container{
+            padding-right: 15px;
+            padding-left: 15px;
+            overflow-y: auto;
+            overflow-x:hidden;
+            height: calc(100vh);
+            overflow: -moz-scrollbars-none; /* Firefox */
+            -ms-overflow-style: none; /* IE */
+        }
+        .container::-webkit-scrollbar{ /* Chrome and Opera */
+            display:none;
+        }
+        .swiper-container {
+          height: calc(100vh);
+          width: 100%;
+        }
+        .swiper-slide {
+          background: #fff;
+          background-position: center;
+          background-size: cover;
+          width: 101vw;
+          height: 100%;
+        }
+        .swiper-button-next, .swiper-button-prev{
+            opacity: 0.5;
+        }
+        .header{
+            margin-top: 11%;
+            text-align: center;
+        }
+        .header img{
+            max-width: calc(90vh / 2);
+            min-width: calc(10vw);
+        }
+        #social{
+            margin-top: 20px;
+            display: block;
+            padding: 10px;
+        }
+        #social a{
+            margin: 5px;
+            box-shadow: 25px #000;
+        }
+        .footer{
+            margin: auto;
+            text-align: center;
+            padding-top: 13px;
+            margin-bottom: 5%;
+        }
+        .back, .back h2{
+            color: #fff;
+        }
+        input[type=submit]{
+            color: #fff;
+        }
+        form{
+            margin: auto;
+            text-align: center;
+        }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="card bg-light">
-        <div class="logo">
-            <img src="https://avatars0.githubusercontent.com/u/25118020?s=460&v=4" alt="logo" class="rounded-circle">
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="container">
+            <div class="section">
+                <h2 class="header"><img src="src/logo.png"></h2>
+                <ul class="collapsible popout">
+                      <li class="active">
+                        <div class="collapsible-header">
+                          <i class="far fa-user"></i>
+                          Ben Kimim?</div>
+                        <div class="collapsible-body"><p>Web ve mobil programlama alanlarıyla ilgileniyorum. Php, Python, JavaScript ve Java başlıca kullandığım  diller arasında yer alıyor. Bunların dışında yapay zeka ve sistem yönetimi alanlarına meraklıyım.</p>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header">
+                          <i class="fas fa-plus"></i>
+                          Bazı Projeler</div>
+                        <div class="collapsible-body">
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                  <img src="src/km.png" alt="" class="circle">
+                                  <span class="title">KodMerkezi</span>
+                                  <p><a href="http://kodmerkezi.org" target="_blank">kodmerkezi.org</a><br>Yazılım Topluluğu
+                                  </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                  <img src="src/tes.png" alt="" class="circle">
+                                  <span class="title">TES Teknik Enerji</span>
+                                  <p><a href="https://teknikenerji.com" target="_blank">teknikenerji.com</a><br>Güneş enerjisi sistemleri
+                                  </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                  <i class="fab fa-github-square circle blue"></i>
+                                  <span class="title">Daha Fazlası</span>
+                                    <p><a href="https://github.com/hlilbilgin" target="_blank">Github/hlilbilgin</a><br>Projelerimin birçoğu burada yer almaktadır.
+                                  </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                  <i class="fab fa-codepen circle blue"></i>
+                                  <span class="title">Daha Fazlası</span>
+                                    <p><a href="https://codepen.io/hitnux" target="_blank">Codepen/hlilbilgin</a>
+                                  </p>
+                                </li>
+                              </ul>
+                          </div>
+                      </li>
+                    </ul>
+                <div class="center-align" id="social">
+                    <a class="waves-effect waves-light btn" href="mailto:hlilbilgin@gmail.com"><i class="fas fa-envelope left"></i>E-maıl</a>
+                    <a class="waves-effect waves-light btn" href="https://github.com/hlilbilgin" target="_blank"><i class="fab fa-github-square left"></i>Github</a>
+                    <a class="waves-effect waves-light btn" href="https://codepen.io/hitnux" target="_blank"><i class="fab fa-codepen left"></i>Codepen</a>
+                    <a class="waves-effect waves-light btn" href="https://linkedin.com/in/hlilbilgin" target="_blank"><i class="fab fa-linkedin left" target="_blank"></i>Linkedin</a>
+                    <a class="waves-effect waves-light btn" href="https://medium.com/@hlilbilgin" target="_blank"><i class="fab fa-medium left" target="_blank"></i>Medıum</a>
+                    <a class="waves-effect waves-light btn" href="https://join.skype.com/invite/dUP77WRUiTCn"><i class="fab fa-skype left" target="_blank"></i>Skype</a>
+                    <a class="waves-effect waves-light btn" href="https://stackoverflow.com/users/11060881/hitnux" target="_blank"><i class="fab fa-stack-overflow left" target="_blank"></i>stackoverflow</a>
+                </div>
+            </div>
+            <div class="footer">HALİL BİLGİN - 2019</div>
         </div>
-        <div class="about"><h1>HALİL BİLGİN</h1></div>
-        <div class="info">Software Engineering Student</div>
-        <hr/>
-            <div class="contact">
-                <ul class="jumbotron">
-                    <li class="linkedin">
-                       <a href="https://linkedin.com/in/hlilbilgin" target="_blank" class="fab fa-linkedin"></a>
-                    </li>
-                    <li class="instagram">
-                       <a href="https://instagram.com/hlilbilgin" target="_blank" class="fab fa-instagram"></a>
-                    </li>
-                    <li class="twitter">
-                       <a href="https://twitter.com/hlilbilgin" target="_blank" class="fab fa-twitter-square"></a>
-                    </li>
-                    <li class="github">
-                       <a href="https://github.com/hlilbilgin" target="_blank" class="fab fa-github-square"></a>
-                    </li>
-                </ul>
+      </div>
+        <div class="swiper-slide">
+            <div class="container">
+                <div class="section">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccOnYhcAa_WPFIRMoe1C3iQSokUkZ1KXxiBxOul3ocBlleaA/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor...</iframe>
+                </div>
             </div>
         </div>
-            <footer class="p-2">HALİL BİLGİN - 2018</footer>
+      <div class="swiper-slide" style="background: #17365D;">
+        <div class="container back">
+            <div class="section">
+                <h2 class="header"><img src="src/icont.png" height="200" width="230"></h2>
+                <p class="center-align" style="font-size:19px;">Halil Bilgin - 2019<br><a href="https://github.com/hlilbilgin/inTheCube" target="_blank">Bu temaya ulaşın!</a></p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container">
+            <div class="section">
+                <h2 class="header">Tam Özgeçmiş</h2>
+                <p class="lighten-3 center-align" style="margin-top:25px;">Tam özgeçmişe erişebilmek için doğrulama kodunu giriniz!</p>
+                <form action="http://halilbilgin.com/mycv.php?verify=" method="get">
+                <div class="row center-align">
+                    <div class="col s3"></div>
+                <div class="input-field col s6">
+                  <input type="text" name="verify" class="validate">
+                    <label>Kod</label>
+                </div>
+                    <div class="col s3"></div>
+              </div>
+                    <input type="submit" value="submit" class="waves-effect waves-light btn">
+                </form>
+            </div>
+        </div>
+      </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="swiper-button-prev swiper-button-black"></div>
+    <div class="swiper-button-next swiper-button-black"></div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script>
+    $(document).ready(function(){
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      centeredSlides: true,
+      grabCursor: false,
+      speed: 900,
+      slidesPerView: 'auto',
+      loop: true,
+      coverflowEffect: {
+        rotate: 90,
+        stretch: 0,
+        depth: 0,
+        modifier: 1,
+        slideShadows : false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
+    $('.collapsible').collapsible();
+  });
+  </script>
 </body>
 </html>
