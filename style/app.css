@@ -1,0 +1,98 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    max-width: 1071px;
+}
+.navbar{
+    margin: auto;
+    max-width: 1095px;
+    padding-top: 1rem;
+}
+.tabs{
+    border-bottom: solid #dbdbdb 1px;
+}
+.tabs ul, .tab-content{
+    max-width: 1103px;
+    margin: auto;
+    border: none;
+}
+.layout{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.layout__left, .layout__right{
+    flex:1;
+}
+.layout__left{
+    margin: 1rem 1.3rem 1rem 0;
+}
+.layout__left p{
+    margin-bottom: 1rem;
+}
+.myinfo{
+    margin-bottom: 1rem;
+}
+.menu-list a{
+    padding: .5em 0 .5em;
+}
+.mycard{
+    width: 100%;
+    margin: 1rem 0 1rem;
+    padding: 1rem;
+    border: solid #dbdbdb 1px;
+    border-radius: 5px;
+}
+.mycard__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mycard__header h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.mycard__middle{
+    padding: 1rem 0 1rem;
+}
+.mycard__middle ul{
+    display: flex;
+    justify-content: space-around;
+}
+.mycard__footer{
+    border-top: solid #dbdbdb 1px;
+    padding-top: 1rem;
+}
+.mycard--badges{
+    background: #EDEDEE;
+    border-radius: 20px;
+    padding: 2px 5px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer{
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px #dbdbdb;
+}
+@media only screen and (max-width:1080px){
+    .container{
+        padding: 0 .75rem 0;
+    }
+}
