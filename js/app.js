@@ -9,7 +9,7 @@ function main(data){
       });
       Vue.component('mycard', {
         template: '#mycard',
-        props: ['title','button','href','user']
+        props: ['title','button','href','user', 'footer']
       });
       Vue.component('myinfo', {
         template: '#myinfo'

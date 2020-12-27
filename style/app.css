@@ -23,12 +23,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    gap: 1rem;
 }
-.layout__left, .layout__right{
+.layout > div{
     flex:1;
-}
-.layout__left{
-    margin: 1rem 1.3rem 1rem 0;
 }
 .layout__left p{
     margin-bottom: 1rem;
@@ -36,12 +34,9 @@
 .myinfo{
     margin-bottom: 1rem;
 }
-.menu-list a{
-    padding: .5em 0 .5em;
-}
 .mycard{
     width: 100%;
-    margin: 1rem 0 1rem;
+    margin: 1rem 0;
     padding: 1rem;
     border: solid #dbdbdb 1px;
     border-radius: 5px;

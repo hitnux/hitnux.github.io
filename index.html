@@ -52,46 +52,11 @@
                 <h1>{{title}}</h1>
                 <span style="margin-left: .5rem;">{{user}}</span>
             </div>
-            <b-button tag="a" :href="href" target="_blank">{{button}}</b-button>
+            <b-button tag="a" :href="href" v-if=" button != '' && button != null " target="_blank">{{button}}</b-button>
         </div>
-        <div class="mycard__middle"><slot name="middle"></slot></div>
-        <div class="mycard__footer"><slot name="footer"></slot></div>
+        <div class="mycard__middle"><slot></slot></div>
+        <div class="mycard__footer" v-if=" footer != 'false' "><slot name="footer"></slot></div>
     </div>
-</template>
-<template id="myinfo">
-    <b-menu class="myinfo">
-        <b-menu-list>
-            <b-menu-item icon="school" label="Fırat Üniversitesi Yazılım Mühendisliği (2016 - 2020)"></b-menu-item>
-        </b-menu-list>
-        <b-menu-list>
-            <b-menu-item
-                icon="apps" expanded>
-                <template slot="label" slot-scope="props">
-                    Alanlar
-                    <b-icon
-                        class="is-pulled-right"
-                        :icon="props.expanded ? 'menu-down' : 'menu-up'">
-                    </b-icon>
-                </template>
-                <b-menu-item icon="memory" label="Yapay Zeka"></b-menu-item>
-                <b-menu-item icon="web">
-                    <template slot="label" slot-scope="props">
-                        BackEnd
-                        <b-dropdown aria-role="list" class="is-pulled-right" position="is-bottom-left">
-                        <b-icon icon="dots-vertical" slot="trigger"></b-icon>
-                            <b-dropdown-item aria-role="listitem">Php (CodeIgniter, Laravel)</b-dropdown-item>
-                            <b-dropdown-item aria-role="listitem">Python (Django)</b-dropdown-item>
-                            <b-dropdown-item aria-role="listitem">NodeJS</b-dropdown-item>
-                        </b-dropdown>
-                    </template>
-                </b-menu-item>
-                <b-menu-item icon="cellphone-link" label="FrontEnd"></b-menu-item>
-            </b-menu-item>
-            </b-menu-list>
-            <b-menu-list>
-                <b-menu-item icon="email" label="hi@halilbilgin.com.tr" tag="a" href="mailto:hi@halilbilgin.com.tr"></b-menu-item>
-            </b-menu-list>
-    </b-menu>
 </template>
     <!-- Templates -->
     <div id="app">
@@ -101,7 +66,38 @@
             <b-tab-item label="Profil">
             <div class="layout">
                 <div class="layout__left">
-                    <myinfo></myinfo>
+                    <div class="cards">
+                        <mycard title="Eğitim" user="" href="https://www.linkedin.com/in/hlilbilgin/" footer="false">
+                            <b-icon
+                                icon="school"
+                                size="is-small">
+                            </b-icon>
+                            Fırat Üniversitesi Yazılım Mühendisliği (2016 - 2020)
+                        </mycard>
+                        <mycard title="Alanlar" user="" href="https://www.linkedin.com/in/hlilbilgin/" footer="false">
+                            <ul style="display: flex; flex-direction: column;">
+                                <li>
+                                    <b-icon icon="memory" size="is-small"></b-icon>
+                                    Yapay Zeka
+                                </li>
+                                <li>
+                                    <b-icon icon="web" size="is-small"></b-icon>
+                                    BackEnd
+                                </li>
+                                <li>
+                                    <b-icon icon="cellphone-link" size="is-small"></b-icon>
+                                    FrontEnd
+                                </li>
+                            </ul>
+                        </mycard>
+                        <mycard title="İletişim" user="" href="https://www.linkedin.com/in/hlilbilgin/" footer="false">
+                            <b-icon
+                                icon="email"
+                                size="is-small">
+                            </b-icon>
+                            <a href="mailto:hi@halilbilgin.com.tr">hi@halilbilgin.com.tr</a>
+                        </mycard>
+                    </div>
                     <div class="buttons">
                         <b-button tag="a" href="https://medium.com/@hlilbilgin" target="_blank">Blog</b-button>
                         <b-button tag="a" href="https://join.skype.com/invite/dUP77WRUiTCn" target="_blank">Skype</b-button>
@@ -110,7 +106,7 @@
                 </div>
                 <div class="layout__right">
                     <mycard title="Github" :user="username" href="https://github.com/hitnux" button="Ziyaret Et">
-                        <ul slot="middle">
+                        <ul>
                             <li><a href="https://github.com/hitnux?tab=repositories" target="_blank">Repositories <span class="mycard--badges">{{repos}}</span></a></li>
                             <li><a href="https://github.com/hitnux?tab=followers" target="_blank">Followers <span class="mycard--badges">{{followers}}</span></a></li>
                             <li><a href="https://github.com/hitnux?tab=following" target="_blank">Following <span class="mycard--badges">{{following}}</span></a></li>
@@ -118,21 +114,22 @@
                         <p slot="footer">#Php #Python #JavaScript</p>
                     </mycard>
                     <mycard title="Codepen" :user="username" href="https://codepen.io/hitnux" button="Ziyaret Et">
-                        <ul slot="middle">
+                        <ul>
                             <li><a href="https://codepen.io/hitnux/pens/public" target="_blank">Projects <span class="mycard--badges">+</span></a></li>
                         </ul>
                         <p slot="footer">#JavaScript #VueJS #CSS</p>
+                    </mycard>
+                    <mycard title="Bağlantı" user="LinkedIn" href="https://www.linkedin.com/in/hlilbilgin/" button="Ziyaret Et">
+                        <div>
+                            Sayfaya ulaşmak için lütfen 'Ziyaret Et' butonuna tıklayınız.
+                        </div>
+                        <p slot="footer"><i>Detaylı özgeçmiş için mail atınız!</i></p>
                     </mycard>
                 </div>
             </div>
             </b-tab-item>
             <b-tab-item label="Özgeçmiş">
-                <mycard title="Bağlantı" user="LinkedIn" href="https://www.linkedin.com/in/hlilbilgin/" button="Ziyaret Et" style="margin:auto">
-                    <div slot="middle">
-                        Sayfaya ulaşmak için lütfen 'Ziyaret Et' butonuna tıklayınız.
-                    </div>
-                    <p slot="footer"><i>Detaylı özgeçmiş için mail atınız!</i></p>
-                </mycard>
+                
             </b-tab-item>
             <b-tab-item label="Other" disabled>
                 
