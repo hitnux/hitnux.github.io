@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">        
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="hxVrkNCI3UE0Scm9kenfmOLrQG5V684lOFTo0U8xlw4" />
+    <meta name="yandex-verification" content="fd809d16aaea80c9" />
+    <meta name="description" content="Web ve mobil programlama alanlarıyla ilgileniyorum. Php, Python, JavaScript ve Java başlıca kullandığım  diller arasında yer alıyor. Bunların dışında yapay zeka ve sistem yönetimi alanlarına meraklıyım.">
+    <link rel="stylesheet" href="" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="src/icon.png" />
+    <title>Halil Bilgin - Software Engineer</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Buefy CSS --><link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css"><!-- Buefy CSS -->
+    <!-- Buefy JavaScript --><script src="https://unpkg.com/buefy/dist/buefy.min.js"></script><!-- Buefy JavaScript -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="style/app.css"/>
+</head>
+<body>
+    <!-- Templates -->
+    <template id="navbar">
+    <b-navbar>
+        <template slot="brand">
+            <b-navbar-item tag="a" :to="{ path: '/' }">
+                <img
+                    src="src/icon.png"
+                    alt="Halil Bilgin"
+                >
+                <span>/</span>
+                <img src="src/logo.png">
+            </b-navbar-item>
+        </template>
+        <template slot="end">
+                <b-navbar-item href="mailto:hi@halilbilgin.com.tr">
+                    hi@halilbilgin.com.tr
+                </b-navbar-item>
+        </template>
+    </b-navbar>
+</template>
+
+    <template id="tabs">
+    
+</template>
+<template id="mycard">
+    <div class="mycard">
+        <div class="mycard__header">
+            <div style="display:flex;align-items:center;">
+                <h1>{{title}}</h1>
+                <span style="margin-left: .5rem;">{{user}}</span>
+            </div>
+            <b-button tag="a" :href="href" v-if=" button != '' && button != null " target="_blank">{{button}}</b-button>
+        </div>
+        <div class="mycard__middle"><slot></slot></div>
+        <div class="mycard__footer" v-if=" footer != 'false' "><slot name="footer"></slot></div>
+    </div>
+</template>
+    <!-- Templates -->
+    <div id="app">
+        <navbar></navbar>
+        <section>
+        <b-tabs>
+            <b-tab-item label="Profil">
+            <div class="layout">
+                <div class="layout__left">
+                    <div class="cards">
+                        <mycard title="Eğitim" user="" href="https://www.linkedin.com/in/hlilbilgin/" footer="false">
+                            <b-icon
+                                icon="school"
+                                size="is-small">
+                            </b-icon>
+                            Fırat Üniversitesi Yazılım Mühendisliği (2016 - 2020)
+                        </mycard>
+                        <mycard title="Alanlar" user="" href="https://www.linkedin.com/in/hlilbilgin/" footer="false">
+                            <ul style="display: flex; flex-direction: column;">
+                                <li>
+                                    <b-icon icon="memory" size="is-small"></b-icon>
+                                    Yapay Zeka
+                                </li>
+                                <li>
+                                    <b-icon icon="web" size="is-small"></b-icon>
+                                    BackEnd
+                                </li>
+                                <li>
+                                    <b-icon icon="cellphone-link" size="is-small"></b-icon>
+                                    FrontEnd
+                                </li>
+                            </ul>
+                        </mycard>
+                        <mycard title="İletişim" user="" href="https://www.linkedin.com/in/hlilbilgin/" footer="false">
+                            <b-icon
+                                icon="email"
+                                size="is-small">
+                            </b-icon>
+                            <a href="mailto:hi@halilbilgin.com.tr">hi@halilbilgin.com.tr</a>
+                        </mycard>
+                    </div>
+                    <div class="buttons">
+                        <b-button tag="a" href="https://medium.com/@hlilbilgin" target="_blank">Blog</b-button>
+                        <b-button tag="a" href="https://join.skype.com/invite/dUP77WRUiTCn" target="_blank">Skype</b-button>
+                        <b-button tag="a" href="https://stackoverflow.com/users/11060881/hitnux" target="_blank">StackOverFlow</b-button>
+                    </div>
+                </div>
+                <div class="layout__right">
+                    <mycard title="Github" :user="username" href="https://github.com/hitnux" button="Ziyaret Et">
+                        <ul>
+                            <li><a href="https://github.com/hitnux?tab=repositories" target="_blank">Repositories <span class="mycard--badges">{{repos}}</span></a></li>
+                            <li><a href="https://github.com/hitnux?tab=followers" target="_blank">Followers <span class="mycard--badges">{{followers}}</span></a></li>
+                            <li><a href="https://github.com/hitnux?tab=following" target="_blank">Following <span class="mycard--badges">{{following}}</span></a></li>
+                        </ul>
+                        <p slot="footer">#Php #Python #JavaScript</p>
+                    </mycard>
+                    <mycard title="Codepen" :user="username" href="https://codepen.io/hitnux" button="Ziyaret Et">
+                        <ul>
+                            <li><a href="https://codepen.io/hitnux/pens/public" target="_blank">Projects <span class="mycard--badges">+</span></a></li>
+                        </ul>
+                        <p slot="footer">#JavaScript #VueJS #CSS</p>
+                    </mycard>
+                    <mycard title="Bağlantı" user="LinkedIn" href="https://www.linkedin.com/in/hlilbilgin/" button="Ziyaret Et">
+                        <div>
+                            Sayfaya ulaşmak için lütfen 'Ziyaret Et' butonuna tıklayınız.
+                        </div>
+                        <p slot="footer"><i>Detaylı özgeçmiş için mail atınız!</i></p>
+                    </mycard>
+                </div>
+            </div>
+            </b-tab-item>
+            <b-tab-item label="Other" disabled>
+                
+            </b-tab-item>
+        </b-tabs>
+    </section>
+    <footer>HALİL BİLGİN © 2016</footer>
+    </div>
+</body>
+</html>
